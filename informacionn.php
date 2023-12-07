@@ -102,7 +102,7 @@
     <input type="submit" value="Aceptar">
   </form>
 
-  <!-- Formulario para Modificación (Actualización) -->
+  
   <form method="post" action="modificacion.php">
     <label for="id_nombre">ID a modificar:</label>
     <input type="number" name="id_modificar" required>
@@ -122,7 +122,7 @@
     <input type="submit" value="Modificar">
   </form>
 
-  <!-- Formulario para Eliminación -->
+  
   <form method="post" action="baja.php">
     <label for="id_eliminar">ID a eliminar:</label>
     <input type="number" name="id_eliminar" required>
@@ -130,10 +130,7 @@
     <input type="submit" value="Eliminar">
   </form>
 
-      <!-- Tabla de Registros -->
-      <!-- ... (your existing code) ... -->
-
-<!-- Tabla de Registros -->
+  
 <h2>Registros</h2>
 <table class="table table-bordered">
   <thead>
@@ -159,7 +156,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-    // Fetch and display records from the database
+  
     $result = $conn->query("SELECT * FROM infomacion");
     while ($row = $result->fetch_assoc()) {
       echo "<tr>";
@@ -175,7 +172,7 @@ if ($conn->connect_error) {
   
 </table>
 
-<!-- ... (your existing code) ... -->
+
 
     </div>
   </div>
