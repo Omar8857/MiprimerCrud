@@ -81,7 +81,7 @@
     <h1>Omar Mendez Coyote</h1>
 
 <div id="content">
-  <h2>Informacion Personal</h2>
+  <h2>Informacion Personal (Registro)</h2>
 
   <form action="http://localhost/Crud/informacion.php" method="post">
     <label for="nombre">Nombre:</label>
@@ -102,7 +102,7 @@
     <input type="submit" value="Aceptar">
   </form>
 
-  
+  <h1>Modificación</h1>
   <form method="post" action="modificacion.php">
     <label for="id_nombre">ID a modificar:</label>
     <input type="number" name="id_modificar" required>
@@ -122,7 +122,7 @@
     <input type="submit" value="Modificar">
   </form>
 
-  
+  <h1>Eliminacion</h1>
   <form method="post" action="baja.php">
     <label for="id_eliminar">ID a eliminar:</label>
     <input type="number" name="id_eliminar" required>
