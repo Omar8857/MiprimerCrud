@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nueva_edad = mysqli_real_escape_string($conn, $nueva_edad);
     $nuevo_domicilio = mysqli_real_escape_string($conn, $nuevo_domicilio);
 
-    // Realizar la actualización
+    
     $sql = "UPDATE infomacion SET nombre = '$nuevo_nombre', apellidos = '$nuevos_apellidos', edad = '$nueva_edad', domicilio = '$nuevo_domicilio' WHERE id_nombre = '$id_modificar'";
 
     if ($conn->query($sql) === TRUE) {
